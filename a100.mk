@@ -16,7 +16,6 @@
 
 # ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/ramdisk/init.vangogh.rc:root/init.vangogh.rc \
     $(LOCAL_PATH)/prebuilt/ramdisk/init.vangogh.usb.rc:root/init.vangogh.usb.rc \
     $(LOCAL_PATH)/prebuilt/ramdisk/ueventd.vangogh.rc:root/ueventd.vangogh.rc
 
@@ -34,9 +33,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/usr/idc/atmel-maxtouch.idc:system/usr/idc/atmel-maxtouch.idc \
     $(LOCAL_PATH)/prebuilt/usr/keylayout/acer-dock.kl:system/usr/keylayout/acer-dock.kl \
     $(LOCAL_PATH)/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dinfo.radio=Wifi
 
 TARGET_BOOTANIMATION_NAME := horizontal-1024x600
 
