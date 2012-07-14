@@ -20,6 +20,8 @@ include device/acer/t20-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := vangogh
 TARGET_OTA_ASSERT_DEVICE := vangogh,a100
 
+BOARD_USES_TINY_AUDIO_HW := true
+
 # kernel
 TARGET_KERNEL_SOURCE := kernel/acer/t20-common
 TARGET_KERNEL_CONFIG := cyanogenmod_vangogh_defconfig
